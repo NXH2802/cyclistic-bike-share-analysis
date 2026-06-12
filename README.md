@@ -1,123 +1,193 @@
-
 # Cyclistic Bike Share Analysis
 
 ## Project Overview
 
-This project analyzes 5.6 million bike-share trips from Cyclistic, a bike-sharing company operating in Chicago. The goal is to understand the differences between annual members and casual riders and provide data-driven recommendations to increase membership conversion.
+This project analyzes 5.6 million bike-share trips from Cyclistic, a bike-sharing company operating in Chicago. The objective is to understand the behavioral differences between annual members and casual riders and provide data-driven recommendations to increase membership conversion.
+
+---
 
 ## Business Task
 
-Cyclistic's marketing team wants to increase the number of annual memberships. This analysis aims to identify behavioral differences between casual riders and annual members and recommend strategies to convert casual riders into members.
+Cyclistic's marketing team aims to increase the number of annual members because they generate more stable and long-term revenue.
 
-## Dataset 
+This project answers the following business question:
 
-* Source: Cyclistic Bike-Share Historical Data
-* Period: January 2024 – December 2024
+**How can Cyclistic convert casual riders into annual members?**
+
+---
+
+## Dataset
+
+### Dataset Summary
+
 * Records: 5,622,419 trips
-* Features:
+* Columns: 11
+* Period: January – December
 
-  * Ride ID
-  * Bike Type
-  * Start Time
-  * End Time
-  * Start Station
-  * End Station
-  * Rider Type (Member / Casual)
-  * Geographic Coordinates
+### Key Features
+
+* Ride ID
+* Bike Type
+* Rider Type (Member / Casual)
+* Start Time
+* End Time
+* Start Station
+* End Station
+* Start Coordinates
+* End Coordinates
+
+---
 
 ## Tools Used
 
-* SQL – Data Cleaning & Analysis
-* Excel – Data Validation
-* Power BI – Data Visualization & Dashboarding
+* Python (Pandas, NumPy)
+* SQL
+* Excel
+* Power BI
+
+---
 
 ## Data Cleaning Process
 
+The following data preparation steps were performed:
+
 * Removed duplicate records
-* Checked and handled missing values
+* Checked missing values
 * Standardized date and time formats
-* Created new calculated fields:
+* Created new variables:
 
   * Ride Duration
   * Day of Week
   * Month
   * Hour
+* Validated data consistency before analysis
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+The analysis focused on:
+
+* Trip volume by rider type
+* Ride duration comparison
+* Weekly riding patterns
+* Hourly riding trends
+* Bike type preferences
+* Monthly and seasonal demand trends
+
+---
+
+## Dashboard Preview
+
+<img width="1343" height="707" alt="Cyclistic Dashboard" src="https://github.com/user-attachments/assets/667d0571-da3b-48e1-ab60-b595877bc349" />
+
+### Dashboard Highlights
+
+* Total Trips: 5.62 Million
+* Members: 63.38%
+* Casual Riders: 36.62%
+* Most Popular Bike Type: Electric Bike
+* Peak Demand Season: Summer & Early Fall
+
+---
 
 ## Key Findings
 
 ### 1. Members Generate More Trips
 
-Members account for approximately 63% of all rides, indicating higher engagement and usage frequency.
+Members account for approximately 63% of all rides, indicating a higher level of engagement and service usage.
 
 ### 2. Casual Riders Prefer Weekends
 
-Casual riders use the service most frequently on Saturdays and Sundays, suggesting recreational and leisure usage.
+Casual riders record the highest number of trips on Saturdays and Sundays, suggesting recreational and leisure-oriented usage.
 
-### 3. Members Ride More Frequently but Shorter
+### 3. Casual Riders Have Longer Ride Durations
 
-The average trip duration of members is significantly shorter than that of casual riders.
+The average trip duration of casual riders is significantly higher than that of members, indicating that casual riders often use the service for longer journeys.
 
 ### 4. Different Peak Usage Hours
 
-* Members peak during commuting hours (8 AM and 5–6 PM).
-* Casual riders peak during the afternoon.
+* Members peak during commuting hours (morning and evening rush hours).
+* Casual riders peak in the afternoon.
 
 ### 5. Electric Bikes Are the Most Popular
 
-Electric bikes represent the largest share of total rides.
+Electric bikes represent the largest share of total rides and are preferred by both customer groups.
 
-### 6. Strong Seasonal Trends
+### 6. Strong Seasonal Demand
 
-Usage increases significantly during summer and early fall, while winter records the lowest demand.
+Demand increases substantially during summer and early fall and decreases during winter months.
+
+---
 
 ## Business Recommendations
 
-### Convert Frequent Casual Riders
+### 1. Target High-Value Casual Riders
 
-Target casual riders with high ride frequency and long trip durations through personalized membership offers.
+Identify casual riders with high ride frequency and long ride durations and offer personalized membership discounts.
 
-### Launch Weekend Membership Campaigns
+### 2. Launch Weekend Membership Campaigns
 
-Promote discounted memberships to riders who frequently use the service on weekends.
+Promote membership plans during weekends when casual rider activity is at its highest.
 
-### Expand Electric Bike Availability
+### 3. Expand Electric Bike Availability
 
-Increase the number of electric bikes at high-demand stations.
+Increase the number of electric bikes at high-demand stations to improve customer experience.
 
-### Corporate Membership Program
+### 4. Develop Corporate Membership Programs
 
-Partner with businesses and organizations to provide membership packages for employees.
+Partner with companies and organizations to provide membership plans for employees and encourage commuting by bike.
 
-### Seasonal Marketing Campaigns
+### 5. Increase Seasonal Marketing Efforts
 
-Increase promotional efforts during peak riding seasons to maximize membership conversion.
+Run promotional campaigns during summer and early fall to maximize membership conversions.
 
-## Dashboard Preview
+---
 
-<img width="1343" height="707" alt="bicy" src="https://github.com/user-attachments/assets/667d0571-da3b-48e1-ab60-b595877bc349" />
+## Project Files
 
+### Power BI Dashboard (.pbix)
+
+Download the Power BI dashboard file:
+
+[Download PBIX File](https://drive.google.com/file/d/1I21GV4eTteu-NLOLdu1s0BzqwwcJXkAy/view?usp=drive_link)
+
+### Dataset
+
+Download the cleaned dataset:
+
+[Download Dataset](https://drive.google.com/file/d/14Pw7kLcOWjXs-kzRhS0sE0m1Yp_aIYT_/view?usp=drive_link)
+
+---
 
 ## Project Structure
 
+```text
 cyclistic-bike-share-analysis/
-
+│
 ├── README.md
-
+│
+├── Python/
+│   └── EDA_using_Python.ipynb
+│
 ├── Dashboard/
-
-│ ├── dashboard.pbix
-https://drive.google.com/file/d/1I21GV4eTteu-NLOLdu1s0BzqwwcJXkAy/view?usp=sharing
-
+│   └── dashboard.pbix
+│
 ├── Presentation/
-
-│ └── Cyclistic_Case_Study.pdf
-
+│   └── Cyclistic_Presentation.pptx
+│
+├── Documents/
+│   ├── Business_Task.pdf
+│   └── Project_Summary.pdf
+│
 └── Data/
+    └── cleaned_dataset.csv
+```
 
-└── data_source.txt
-https://drive.google.com/file/d/14Pw7kLcOWjXs-kzRhS0sE0m1Yp_aIYT_/view?usp=sharing
-
+---
 
 ## Conclusion
 
-This analysis reveals clear behavioral differences between annual members and casual riders. By focusing on high-potential casual riders, expanding electric bike offerings, and implementing targeted membership campaigns, Cyclistic can increase membership conversion and support long-term business growth.
+This analysis reveals clear behavioral differences between annual members and casual riders. Members use the service more frequently and primarily for commuting purposes, while casual riders tend to ride longer and prefer weekends.
+
+By targeting high-potential casual riders, expanding electric bike availability, and implementing strategic membership campaigns, Cyclistic can increase annual membership conversion and support long-term business growth.
