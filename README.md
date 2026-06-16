@@ -150,13 +150,13 @@ Run promotional campaigns during summer and early fall to maximize membership co
 
 Download the Power BI dashboard file:
 
-[Download PBIX File](https://drive.google.com/file/d/1I21GV4eTteu-NLOLdu1s0BzqwwcJXkAy/view?usp=drive_link)
+[Download PBIX File](https://drive.google.com/drive/folders/1nMDR4919BhJ8GYHPUp3pzfGG_vmv4bLC?usp=sharing)
 
 ### Dataset
 
 Download the cleaned dataset:
 
-[Download Dataset](https://drive.google.com/file/d/14Pw7kLcOWjXs-kzRhS0sE0m1Yp_aIYT_/view?usp=drive_link)
+[Download Dataset](https://drive.google.com/drive/folders/17dgrGrVGMLPljlymg5vIRF0X12czor9y?usp=sharing)
 
 ---
 
